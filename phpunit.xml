@@ -7,9 +7,9 @@
         </testsuite>
     </testsuites>
 
-	<filter>
-		<whitelist>
-			<directory suffix=".php">src/main/</directory>
-		</whitelist>
-	</filter>
+    <filter>
+        <whitelist>
+            <directory suffix=".php">src/main/</directory>
+        </whitelist>
+    </filter>
 </phpunit>

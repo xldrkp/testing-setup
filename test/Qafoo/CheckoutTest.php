@@ -10,6 +10,7 @@ class CheckoutTest extends \PHPUnit_Framework_TestCase
 
     public function setUp()
     {
+        $this->markTestSkipped();
         $builder = $this->getMockBuilder('Qafoo\\Display');
         $builder->disableOriginalConstructor();
 
@@ -71,7 +72,9 @@ class CheckoutTest extends \PHPUnit_Framework_TestCase
         $this->checkout->registerProduct(0.23);
     }
 
-    public function stub_example_without_test_execution()
+
+
+   /* public function stub_example_without_test_execution()
     {
         $this->displayMock->expects($this->any())
             ->method('renderText')
@@ -95,5 +98,5 @@ class CheckoutTest extends \PHPUnit_Framework_TestCase
                     }
                 )
             );
-    }
+    }*/
 }
